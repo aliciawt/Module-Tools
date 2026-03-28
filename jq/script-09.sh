@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+jq -r '.[] | .name + " " + (.scores | add |tostring)' scores.json
 
 # The input for this script is the scores.json file.
 # TODO: Write a command to output just the names of each player along with the total scores from all of their games added together.
