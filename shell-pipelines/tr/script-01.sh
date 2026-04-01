@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+tr '!' '.' < text.txt
 
 # The input for this script is the text.txt file, which contains an email.
 # The author got feedback that they're using too many exclamation marks (!).
