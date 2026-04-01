@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+sort -k3,3nr scores-table.txt | head -n 2 | tail -n 1
 
 # The input for this script is the scores-table.txt file.
 # TODO: Write a command to output scores-table.txt, with shows the line for the player whose first score was the second highest.
