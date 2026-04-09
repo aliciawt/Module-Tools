@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+tr 'yYzZ' 'zZyY' < text.txt
 
 # The input for this script is the text.txt file, which contains an email.
 # Unfortunately, the author wrote it using a German keyboard which has the Y and Z keys swapped,

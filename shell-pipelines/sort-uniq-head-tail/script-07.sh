@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+tail -n +2 events-with-timestamps.txt | sort -k3,3 | uniq -c -w 5
 
 # The input for this script is the events-with-timestamps.txt file.
 # TODO: Write a command to show how many times anyone has entered and exited.

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+sort events.txt | uniq
 
 # The input for this script is the events.txt file.
 # TODO: Write a command to show a list of all events that have happened, without duplication.

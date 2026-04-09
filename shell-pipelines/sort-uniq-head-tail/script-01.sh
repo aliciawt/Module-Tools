@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+sort scores-table.txt
 
 # The input for this script is the scores-table.txt file.
 # TODO: Write a command to output scores-table.txt, with lines sorted by the person's name.
