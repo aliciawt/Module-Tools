@@ -24,7 +24,7 @@ for (let file of files) {
 
     for (let line of lines) {
         if (numberNonBlank) {
-            if (line.trim() !== '') {
+            if (line !== '') {
                 console.log(lineNumber + '\t' + line);
                 lineNumber++;
             } else {
